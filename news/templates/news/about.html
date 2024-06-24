@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-family: 'Arial', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .card-text {
+            font-family: 'Georgia', serif;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .quote-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.4em;
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .btn-social {
+            font-size: 1.2em;
+            padding: 10px 20px;
+        }
+        .btn-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+        .btn-instagram {
+            background-color: #e4405f;
+            color: white;
+        }
+        .btn-twitter {
+            background-color: #55acee;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Tentang Saya</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Andi Ryan Pramadana Putra</h2>
+                        <p class="quote-text">
+                            “Kamu tidak perlu menjadi luar biasa untuk memulai, tapi kamu harus memulai untuk menjadi luar biasa.”
+                        </p>
+                        <p class="card-text">
+                            Dalam situs ini, Anda akan menemukan berbagai berita terbaru dari berbagai sumber terpercaya. Saya berharap situs ini dapat menjadi sumber informasi yang bermanfaat bagi Anda.
+                        </p>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/your-profile" class="btn btn-facebook btn-social mx-1" target="_blank">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/andprmdna?igsh=dWo0MTZ5eHFsZXVz&utm_source=qr" class="btn btn-instagram btn-social mx-1" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.twitter.com/your-profile" class="btn btn-twitter btn-social mx-1" target="_blank">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a href="{% url 'home' %}" class="btn btn-info mt-3">Kembali ke Beranda</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
